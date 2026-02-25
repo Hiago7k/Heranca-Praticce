@@ -1,6 +1,7 @@
 ﻿namespace Heranca_Praticce;
 
-internal class DificuldadeDoJogo
+internal class DificuldadeDoJogo : Minecrfat
+
 {
     public DificuldadeDoJogo(string dificuldadeDoModol)
     {
