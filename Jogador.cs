@@ -14,10 +14,16 @@ internal class Jogador : Minecrfat
     public DificuldadeDoJogo Dificuldade { get; set; }
 
 
-    //public override void ExibirDetalhesDoJogo()
-    //{
-    //    base.World;
-    //    Console.WriteLine($"{NomeDoJogador} {IdadeDoJogador} {Dificuldade.DificuldadeDoModo}");
-    //}
+    public override void Executar(List<string> ListaDeJogos)
+    {
+        base.World();
+
+        Console.WriteLine("Seu mundo esta pronto");
+    }
+
+    public void ExibirDetalhesDoJogo()
+    {
+        Console.WriteLine($"{NomeDoJogador} {IdadeDoJogador} {Dificuldade.DificuldadeDoModo}");
+    }
 
 }

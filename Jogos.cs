@@ -1,8 +1,13 @@
 ﻿namespace Heranca_Praticce;
 
-internal class Minecrfat
+public  class Minecrfat
 {
-   private List<string> ListaDeJogos = new();
+   public List<string> ListaDeJogos = new();
+
+    public virtual void Executar(List<string> ListaDeJogos)
+    {
+    }
+
 
     public void World()
     {
