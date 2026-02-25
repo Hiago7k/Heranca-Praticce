@@ -1,29 +1,30 @@
 ﻿namespace Heranca_Praticce;
 
-public  class Minecrfat
+public   class Jogos
 {
-   public List<string> ListaDeJogos = new();
+   public  List<string> ListaDeJogos = new();
 
-    public virtual void Executar(List<string> ListaDeJogos)
+    public virtual void Executar()
     {
-    }
-
-
-    public void World()
-    {
-        Console.WriteLine("Criando novo mundo!");
-    }
-
-    public void AdicionarJogoNaLista(string lista)
-    {
-        ListaDeJogos.Add(lista);
-    }
-
-    public void MostrarJogosDaLista()
-    {
+        Console.WriteLine("Jogos na lista");
         foreach (var jogo in ListaDeJogos)
         {
             Console.WriteLine($"{jogo}");
         }
     }
+
+    public virtual void World()
+    {
+        Console.WriteLine("Criando novo mundo!");
+    }
+
+    public virtual void AdicionarJogoNaLista(string lista)
+    {
+        ListaDeJogos.Add(lista);
+    }
+
+    //public virtual void MostrarJogosDaLista()
+    //{
+       
+    //}
 }

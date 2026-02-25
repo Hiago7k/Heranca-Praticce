@@ -1,6 +1,6 @@
 ﻿namespace Heranca_Praticce;
 
-internal class Jogador : Minecrfat
+internal class Jogador : Jogos
 {
     public Jogador(string nomeDoJogador, int idadeDoJogador, DificuldadeDoJogo dificuldade)
     {
@@ -14,10 +14,9 @@ internal class Jogador : Minecrfat
     public DificuldadeDoJogo Dificuldade { get; set; }
 
 
-    public override void Executar(List<string> ListaDeJogos)
+    public override void Executar()
     {
         base.World();
-
         Console.WriteLine("Seu mundo esta pronto");
     }
 
